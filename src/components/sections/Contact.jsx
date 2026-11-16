@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <Section id="contact" index={4} label="Contact">
       <p className="contact__lead">
-        If you want to talk about a role, a project, or what's wrong with this site, <a href={`mailto:${profile.email}`}>email me</a>.
+        If you want to talk about a role, a project, or any other inquiry, <a href={`mailto:${profile.email}`}>email me</a>.
       </p>
       <div className="contact__links">
         <a href={profile.github} {...ext}>GitHub ↗</a>
