@@ -8,7 +8,7 @@ export const profile = {
     email: "code.by.hamzaa@gmail.com",
     github: "https://github.com/Code-by-Hamza",
     linkedin: "https://www.linkedin.com/in/code-by-hamza",
-    resume: "/resume.pdf", //todo: placeholder PDF in /public. Replace it, keep the filename.
+    resume: "/resume.pdf", // Replace with your current resume, keeping the filename.
 };
 
 export const sections = [
@@ -19,14 +19,14 @@ export const sections = [
 ];
 
 export const about = [
-    "I like building the part of software you actually touch. I work mostly in JavaScript and React, and I reach for React Native when something belongs on a phone instead of in a browser.",
-    "I'm early in my career, and I'd rather be honest about that than dress it up. Right now I'm learning React Native and polishing my skills in React, and I'm looking for a role where I can grow as a developer while contributing to meaningful projects.",
+    "I enjoy building user-facing software. I work mainly with JavaScript and React, creating clear, responsive interfaces and connecting them to real data through APIs.",
+    "I'm currently strengthening my React skills and learning to build mobile apps with React Native. I care about understanding how things work, writing maintainable code, and turning ideas into useful products.",
 ];
 
 export const skills = [
-    { label: "Main", items: ["JavaScript", "React", "React Native"] },
-    { label: "Also", items: ["HTML", "CSS", "Git", "APIs"] },
-    { label: "Learning", items: ["Software engineering"] },
+    { label: "Main", items: ["JavaScript", "React"] },
+    { label: "Also", items: ["HTML", "CSS", "Git", "REST APIs"] },
+    { label: "Learning", items: ["React Native"] },
 ];
 
 // To add a project, copy an object and fill it in.
