@@ -1,39 +1,17 @@
 :root {
   color-scheme: dark;
+  --bg: #0e0e10;
+  --bg-hover: #16161a;
+  --text: #ece9e2;
+  --text-dim: #9a968e;
+  --text-faint: #5f5c57;
+  --line: #26262b;
+  --accent: #f0b45a;
+  --accent-rgb: 240, 180, 90;
 
-  --color-bg: #07060d;
-  --color-bg-soft: #0c0a15;
-  --color-surface: #110e1d;
-  --color-surface-2: #181327;
-  --color-text: #f4f1fb;
-  --color-muted: #a8a0ba;
-  --color-primary: #a78bfa;
-  --color-primary-strong: #7c3aed;
-  --color-border: rgba(196, 181, 253, 0.12);
-  --color-border-strong: rgba(196, 181, 253, 0.28);
+  --font-display: "Instrument Serif", Georgia, serif;
+  --font-body: "Inter Variable", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, Menlo, monospace;
 
-  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
-
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: clamp(1.05rem, 1vw + 0.8rem, 1.25rem);
-  --text-h2: clamp(2rem, 4vw + 0.5rem, 3.25rem);
-  --text-h1: clamp(2.6rem, 7vw + 0.5rem, 5.5rem);
-
-  --space-1: 0.5rem;
-  --space-2: 1rem;
-  --space-3: 1.5rem;
-  --space-4: 2.5rem;
-  --space-5: 4rem;
-  --space-section: clamp(4.5rem, 10vw, 8rem);
-
-  --radius-sm: 10px;
-  --radius-md: 18px;
-  --radius-lg: 26px;
-
-  --container: 1120px;
-  --header-h: 68px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
-  --dur: 0.3s;
 }
