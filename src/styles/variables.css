@@ -1,17 +1,17 @@
 :root {
-  color-scheme: dark;
-  --bg: #0e0e10;
-  --bg-hover: #16161a;
-  --text: #ece9e2;
-  --text-dim: #9a968e;
-  --text-faint: #5f5c57;
-  --line: #26262b;
-  --accent: #f0b45a;
-  --accent-rgb: 240, 180, 90;
+    color-scheme: dark;
+    --bg: #0e0e10;
+    --bg-hover: #16161a;
+    --text: #ece9e2;
+    --text-dim: #9a968e;
+    --text-faint: #5f5c57;
+    --line: #26262b;
+    --accent: #f0b45a;
+    --accent-rgb: 240, 180, 90;
 
-  --font-display: "Instrument Serif", Georgia, serif;
-  --font-body: "Inter Variable", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono Variable", ui-monospace, Menlo, monospace;
+    --font-display: "Instrument Serif", Georgia, serif;
+    --font-body: "Inter Variable", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono Variable", ui-monospace, Menlo, monospace;
 
-  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
