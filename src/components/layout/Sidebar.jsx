@@ -26,18 +26,33 @@ export default function Sidebar() {
     const [active, setActive] = useState("about");
 
     useEffect(() => {
-        const io = new IntersectionObserver(
-            (entries) =>
-                entries.forEach(
-                    (e) => e.isIntersecting && setActive(e.target.id),
-                ),
-            { rootMargin: "-40% 0px -55% 0px" },
+        const observer = new IntersectionObserver(
+            (entries) => {
+                const visibleSections = entries.filter(
+                    (entry) => entry.isIntersecting,
+                );
+
+                if (!visibleSections.length) return;
+
+                const readingLine = window.innerHeight * 0.35;
+                const currentSection = visibleSections.reduce((closest, entry) =>
+                    Math.abs(entry.boundingClientRect.top - readingLine) <
+                    Math.abs(closest.boundingClientRect.top - readingLine)
+                        ? entry
+                        : closest,
+                );
+
+                setActive(currentSection.target.id);
+            },
+            { rootMargin: "-30% 0px -60% 0px" },
         );
-        sections.forEach((s) => {
-            const el = document.getElementById(s.id);
-            if (el) io.observe(el);
+
+        sections.forEach(({ id }) => {
+            const element = document.getElementById(id);
+            if (element) observer.observe(element);
         });
-        return () => io.disconnect();
+
+        return () => observer.disconnect();
     }, []);
 
     const [first, ...rest] = profile.name.split(" ");
@@ -59,7 +74,7 @@ export default function Sidebar() {
                                 <a
                                     href={`#${s.id}`}
                                     aria-current={
-                                        active === s.id ? "true" : undefined
+                                        active === s.id ? "location" : undefined
                                     }
                                 >
                                     {s.label}
