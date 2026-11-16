@@ -1,48 +1,40 @@
-# My Portfolio
+# Hamza Akhlaq — Portfolio
 
-A minimal portfolio website built with React and Vite. The design uses a strong editorial layout with a sticky sidebar, clean typography, and a simple content-first structure.
+A personal portfolio website built with React and Vite. The design uses an editorial layout with a sticky sidebar, restrained typography, and a content-first structure.
 
 ## Live Website
 
-- https://exampledomain.com
+- https://hamza-akhlaq-portfolio.netlify.app
 
 ## Local Development
 
-1. Clone the repository
+1. Clone the repository.
 2. Install dependencies:
+
+   ```bash
    npm install
-3. Start the app:
+   ```
+
+3. Start the development server:
+
+   ```bash
    npm run dev
+   ```
 
 ## Project Structure
 
-- src/App.jsx — page layout and section order
-- src/data/site.js — main content source for profile, sections, skills, and projects
-- src/components/layout/Sidebar.jsx — left-side navigation and social links
-- src/components/sections/ — section components for About, Skills, Projects, and Contact
-- src/styles/variables.css — color, spacing, font, and theme variables
-- src/styles/global.css — layout and styling rules
-- public/resume.pdf — resume file
-
-## Customize This Portfolio
-
-If you want to reuse this project for your own profile, update these files first:
-
-- src/data/site.js — name, title, bio, email, social links, skills, and project list
-- public/resume.pdf — replace with your own resume
-- src/styles/variables.css — change colors, typography, and spacing
-- src/styles/global.css — adjust layout and visual details
-- src/components/layout/Sidebar.jsx — update name, social icons, and navigation labels
-
-Optional design tweaks:
-
-- src/components/sections/About.jsx
-- src/components/sections/Projects.jsx
-- src/components/sections/Contact.jsx
+- `src/App.jsx` — page layout and section order
+- `src/data/site.js` — profile, sections, skills, and project content
+- `src/components/layout/Sidebar.jsx` — sidebar navigation and social links
+- `src/components/sections/` — About, Skills, Projects, and Contact sections
+- `src/styles/variables.css` — color, typography, and theme variables
+- `src/styles/global.css` — layout and styling rules
+- `public/resume.pdf` — downloadable resume
 
 ## Tech Stack
 
 - React
 - Vite
+- JavaScript
 - CSS
-- Fontsource for typography
+- Fontsource
