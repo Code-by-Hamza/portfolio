@@ -6,20 +6,19 @@ import Skills from "./components/sections/Skills.jsx";
 import Projects from "./components/sections/Projects.jsx";
 import Contact from "./components/sections/Contact.jsx";
 
-function App() {
-    return (
-        <div className="app-shell">
-            <Navbar />
-            <main>
-                <Hero />
-                <About />
-                <Skills />
-                <Projects />
-                <Contact />
-            </main>
-            <Footer />
-        </div>
-    );
+export default function App() {
+  return (
+    <>
+      <a className="skip-link" href="#about">Skip to content</a>
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+    </>
+  );
 }
-
-export default App;

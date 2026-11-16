@@ -1,17 +1,9 @@
-export default function Button({ children, variant = 'primary', href, ...props }) {
-  const classes = `button button--${variant}`
-
-  if (href) {
-    return (
-      <a className={classes} href={href} {...props}>
-        {children}
-      </a>
-    )
-  }
-
+export default function Button({ children, variant = "primary", href, external, ...props }) {
+  const className = `button button--${variant}`;
+  const extra = external ? { target: "_blank", rel: "noopener noreferrer" } : {};
   return (
-    <button className={classes} type="button" {...props}>
+    <a className={className} href={href} {...extra} {...props}>
       {children}
-    </button>
-  )
+    </a>
+  );
 }

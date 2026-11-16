@@ -1,23 +1,26 @@
-import Button from '../ui/Button.jsx'
-import SectionHeading from '../ui/SectionHeading.jsx'
+import Button from "../ui/Button.jsx";
+import SectionHeading from "../ui/SectionHeading.jsx";
+import { profile } from "../../data/site.js";
 
 export default function Contact() {
   return (
-    <section id="contact" className="section section--cta">
+    <section id="contact" className="section" aria-labelledby="contact-title">
       <div className="container contact-panel">
         <SectionHeading
+          id="contact-title"
           eyebrow="Contact"
-          title="Let’s build something useful, beautiful, and memorable."
-          description="Available for product design, frontend development, and creative collaborations."
+          title="Let's talk."
+          description="Feedback, advice or an opportunity to learn on a real team? I'd like to hear from you."
         />
-
         <div className="contact-actions">
-          <a className="contact-link" href="mailto:hello@hamza.dev">
-            hello@hamza.dev
-          </a>
-          <Button href="mailto:hello@hamza.dev">Start a project</Button>
+          {profile.email && <Button href={`mailto:${profile.email}`}>Email me</Button>}
+          <Button variant={profile.email ? "secondary" : "primary"} href={profile.github} external>
+            GitHub ↗
+          </Button>
+          {profile.linkedin && <Button variant="secondary" href={profile.linkedin} external>LinkedIn ↗</Button>}
+          {profile.resume && <Button variant="secondary" href={profile.resume} external>Resume ↗</Button>}
         </div>
       </div>
     </section>
-  )
+  );
 }

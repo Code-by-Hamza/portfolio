@@ -1,46 +1,24 @@
-import Button from '../ui/Button.jsx'
+import Button from "../ui/Button.jsx";
+import HeroArt from "./HeroArt.jsx";
+import { profile } from "../../data/site.js";
 
 export default function Hero() {
   return (
-    <section id="home" className="hero section">
+    <section id="home" className="hero section" aria-labelledby="hero-title">
       <div className="container hero__grid">
         <div className="hero__content">
-          <span className="eyebrow">Product designer & frontend developer</span>
-          <h1>Building thoughtful digital experiences for brands and people.</h1>
-          <p>
-            I design and build polished interfaces that help teams launch faster, communicate more clearly,
-            and deliver memorable user journeys.
-          </p>
-
+          <span className="eyebrow">{profile.title}</span>
+          <h1 id="hero-title">
+            Hi, I'm <em>{profile.name.split(" ")[0]}</em>.<br />I build for web &amp; mobile.
+          </h1>
+          <p>{profile.intro}</p>
           <div className="hero__actions">
-            <Button href="#projects">View work</Button>
-            <Button variant="secondary" href="#contact">
-              Let&apos;s talk
-            </Button>
+            <Button href="#projects">See my work</Button>
+            <Button variant="secondary" href="#contact">Get in touch</Button>
           </div>
         </div>
-
-        <div className="hero__panel" aria-label="Profile summary panel">
-          <div className="profile-card">
-            <div className="profile-card__avatar">H</div>
-            <div>
-              <strong>Hamza Khan</strong>
-              <span>Available for freelance work</span>
-            </div>
-          </div>
-
-          <div className="stat-grid">
-            <div>
-              <strong>6+</strong>
-              <span>Years experience</span>
-            </div>
-            <div>
-              <strong>24</strong>
-              <span>Projects shipped</span>
-            </div>
-          </div>
-        </div>
+        <HeroArt />
       </div>
     </section>
-  )
+  );
 }
