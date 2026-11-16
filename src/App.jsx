@@ -33,8 +33,7 @@ export default function App() {
                     <Projects />
                     <Contact />
                     <p className="footnote">
-                        Built with React and Vite, and a healthy dose of
-                        caffeine.
+                        Designed and built with React, Vite and CSS.
                     </p>
                 </main>
             </div>
