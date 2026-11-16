@@ -19,7 +19,7 @@ export const sections = [
 ];
 
 export const about = [
-    "I enjoy building user-facing software. I work mainly with JavaScript and React, creating clear, responsive interfaces and connecting them to real data through APIs.",
+    "I enjoy building user friendly software. I work mainly with JavaScript and React, creating clear, responsive interfaces and connecting them to real data through APIs.",
     "I'm currently strengthening my React skills and learning to build mobile apps with React Native. I care about understanding how things work, writing maintainable code, and turning ideas into useful products.",
 ];
 

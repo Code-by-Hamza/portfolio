@@ -35,11 +35,12 @@ export default function Sidebar() {
                 if (!visibleSections.length) return;
 
                 const readingLine = window.innerHeight * 0.35;
-                const currentSection = visibleSections.reduce((closest, entry) =>
-                    Math.abs(entry.boundingClientRect.top - readingLine) <
-                    Math.abs(closest.boundingClientRect.top - readingLine)
-                        ? entry
-                        : closest,
+                const currentSection = visibleSections.reduce(
+                    (closest, entry) =>
+                        Math.abs(entry.boundingClientRect.top - readingLine) <
+                        Math.abs(closest.boundingClientRect.top - readingLine)
+                            ? entry
+                            : closest,
                 );
 
                 setActive(currentSection.target.id);
