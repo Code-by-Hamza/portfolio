@@ -1,10 +1,10 @@
-# Hamza Akhlaq — Portfolio
+# My Portfolio
 
 A personal portfolio website built with React and Vite. The design uses an editorial layout with a sticky sidebar, restrained typography, and a content-first structure.
 
 ## Live Website
 
-- https://hamza-akhlaq-portfolio.netlify.app
+- https://hamza-akhlaq.netlify.app
 
 ## Local Development
 
